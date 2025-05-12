@@ -1,0 +1,86 @@
+html,body,*{
+            font-size:16px;
+}
+.flex-container1 {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row-reverse; /* stacks child elements horizontally */
+    background-color:white;
+    height: 60px;
+    text-align: center;
+}
+.flex-box1 {
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:none; 
+    color: white;
+}
+
+.flex-container2 {
+    display: flex;
+    background-color: white;
+    height: 60px;
+}
+
+.flex-box2 {
+    background-color: white;
+    width: 600px;
+    margin: 0px;
+    text-align: left;
+    font-size: 20px
+
+}
+
+.flex-container3 {
+    display: flex;
+    background-color: white;
+    height: 60px;
+}
+
+.flex-box3{
+    background-color: white;
+    width: 600px;
+    margin: 0px;
+    text-align: left;
+    font-size: 20px
+}
+
+.flex-container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Center child items*/
+    gap: 10px; /*Add 10px space between items*/
+    text-align: center;/*Centers text inside items*/
+}
+
+#foodImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#learnMore {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.flex-container5 {
+    display: flex;
+    background-color: orange;
+    height: 100px;
+}
