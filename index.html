@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+        <!-- Ensure proper text encoding -->
         <meta charset="utf-8">
-        <meta name ="viewport" content="width=<device-width>,initial-scale=1.0" />
+        <!-- Mobile device design -->
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0" />
+        <!-- Title of the website at the broswer tab -->
         <title>Get random recipes for the soul & mind </title>
+        <!-- Link to external CSS for styling -->
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <header>
+            <!-- Flex container 1 -->
             <div class="flex-container1">
                 <h1 class="flex-box1">Mindful Eating</h1>
             </div>
+            <!-- Flex container 2 -->
             <div class="flex-container2">
                 <h1 class="flex-box2">Delivering healthy and delicious food for everyone.</h1>
             </div>
         </header>
         <section>
+            <!-- Flex container 3 -->
             <div class="flex-container3">
-                <h1 class="flex-box3">Random Recipes Application</h1>
+                <h2 class="flex-box3">Random Recipes Application</h2>
+                
             </div>
+            <!-- Flex container 6-->
+            <div class="flex-container6">
+                <label for="foodtype">Choose a food type:</label>
+                <input type="text" id="foodtype" size="45" placeholder="Enter vegetarian, dessert, chicken or fish in lower case"/><br>
+            </div>
+            <!-- Flex container 4-->
             <div class="flex-container4">
                 <img src="https://img.spoonacular.com/recipes/661036-556x370.jpg" id="foodImage" alt="food image">
-                <h4>Get New and awesome experience with vegetarian food!!</h4>
+                <h4>Get New and awesome experience with food!!</h4>
                 <button id="generateRecipe">Generate a recipe!</button>
                 <a id="learnMore" href="https://www.foodista.com/recipe/GCF2PY72/spicy-carrot-amaranth-soup">Learn more</a>
             </div>
@@ -35,7 +49,7 @@
                 <li>🥑 Percentage Fat:<span id="Fat">56.54</span></li>
                 <li>🍞 Percentage Carbs:<span id="Carbs">35.67</span></li>
             </ul>
-
+            <!-- JS to handle the dynamic behavior-->
             <script src="main.js"></script>
         </section>
         <footer>

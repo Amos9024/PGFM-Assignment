@@ -16,16 +16,17 @@ const requestOptions = {
     method: "GET"
 }
 function generateRecipe(){
-    console.log("hi")
-    fetch(`https://api.spoonacular.com/recipes/random?apiKey=${apiKey1}&number=1&includeNutrition=true&include-tags=vegetarian`, requestOptions)
+    console.log("Generate Recipe");
+    let foodType = document.getElementById("foodtype").value;
+    fetch(`https://api.spoonacular.com/recipes/random?apiKey=${apiKey1}&number=1&includeNutrition=true&include-tags=${foodType}`, requestOptions)
     .then((response) => response.json())
     .then((result) => {
         foodImage.src = result.recipes[0].image; 
         learnMore.setAttribute("href",result.recipes[0].sourceUrl) 
         foodName.innerHTML = result.recipes[0].title;
-        foodProtein.innerHTML = result.recipes[0].nutrition.caloricBreakdown.percentProtein;
-        foodFat.innerHTML = result.recipes[0].nutrition.caloricBreakdown.percentFat;
-        foodCarbs = result.recipes[0].nutrition.caloricBreakdown.percentCarbs;
+        foodProtein.innerHTML = result.recipes[0].nutrition.caloricBreakdown.percentProtein + "%";
+        foodFat.innerHTML = result.recipes[0].nutrition.caloricBreakdown.percentFat + "%";
+        foodCarbs.innerHTML = result.recipes[0].nutrition.caloricBreakdown.percentCarbs + "%";
 
     })
     .catch((error) => console.error(error));
