@@ -3,12 +3,15 @@
     <head>
         <!-- Ensure proper text encoding -->
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- Mobile device design -->
         <meta name ="viewport" content="width=device-width,initial-scale=1.0" />
         <!-- Title of the website at the broswer tab -->
         <title>Get random recipes for the soul & mind </title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <!-- Link to external CSS for styling -->
         <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:300,500&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -29,25 +32,43 @@
             </div>
             <!-- Flex container 6-->
             <div class="flex-container6">
-                <label for="foodtype">Choose a food type:</label>
-                <input type="text" id="foodtype" size="45" placeholder="Enter vegetarian, dessert, chicken or fish in lower case"/><br>
+                <p>Please select your favorite food type:</p>
+                <div class="radio-option">
+                    <input type="radio" id="chicken" name="fav_food_type" value="chicken">
+                    <label for="chicken">Chicken</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="vegetarian" name="fav_food_type" value="vegetarian">
+                    <label for="vegetarian">Vegetarian</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="fish" name="fav_food_type" value="fish">
+                    <label for="fish">Fish</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="dessert" name="fav_food_type" value="dessert">
+                    <label for="dessert">Dessert</label>
+                </div>
+                
+                <!-- <label for="foodtype">Choose a food type:</label> -->
+                <!-- <input type="text" id="foodtype" size="45" placeholder="Enter vegetarian, dessert, chicken or fish in lower case"/><br> -->
             </div>
             <!-- Flex container 4-->
             <div class="flex-container4">
-                <img src="https://img.spoonacular.com/recipes/661036-556x370.jpg" id="foodImage" alt="food image">
+                <img src="https://img.spoonacular.com/recipes/801377-556x370.jpg" id="foodImage" alt="food image">
                 <h4>Get New and awesome experience with food!!</h4>
                 <button id="generateRecipe">Generate a recipe!</button>
-                <a id="learnMore" href="https://www.foodista.com/recipe/GCF2PY72/spicy-carrot-amaranth-soup">Learn more</a>
+                <a id="learnMore" href="https://spoonacular.com/chicken-parmesan-patty-eat-as-a-burger-or-on-pasta-801377">Learn more</a>
             </div>
             
-            <h2>Name of food: <span id="foodName">Spicy Carrot Amaranth Soup</span></h2>
+            <h2>Name of food: <span id="foodName">Chicken Parmesan Patty- Eat As A Burger OR On Pasta</span></h2>
 
 
             <h2><b>Caloric Breakdown</b></h2>
             <ul class="caloric-breakdown">
-                <li>🍗 Percentage Protein:<span id="Protein">7.79</span></li>
-                <li>🥑 Percentage Fat:<span id="Fat">56.54</span></li>
-                <li>🍞 Percentage Carbs:<span id="Carbs">35.67</span></li>
+                <li>🍗 Percentage Protein:<span id="Protein">30.03</span></li>
+                <li>🥑 Percentage Fat:<span id="Fat">66.65</span></li>
+                <li>🍞 Percentage Carbs:<span id="Carbs">3.32</span></li>
             </ul>
             <!-- JS to handle the dynamic behavior-->
             <script src="main.js"></script>

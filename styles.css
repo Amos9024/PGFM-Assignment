@@ -20,6 +20,7 @@ html,body,*{
     display: flex;
     background-color: white;
     height: 60px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .flex-box2 {
@@ -35,6 +36,7 @@ html,body,*{
     display: flex;
     background-color: white;
     height: 60px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .flex-box3{
@@ -51,6 +53,7 @@ html,body,*{
     align-items: center; /*Center child items*/
     gap: 10px; /*Add 10px space between items*/
     text-align: center;/*Centers text inside items*/
+    font-family: 'Quicksand', sans-serif;
 }
 
 #foodImage {
@@ -69,6 +72,13 @@ button {
     transition: background-color 0.3s;
 }
 
+.radio-option {
+  display: flex;
+  align-items: left;
+}
+
+
+
 #learnMore {
     padding: 10px 20px;
     border: none;
@@ -83,10 +93,12 @@ button {
     display: flex;
     background-color: orange;
     height: 100px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .flex-container6 {
     display: flex;
     background-color: white;
-    height: 20px;
+    height: 150px;
+    flex-direction: column;
 }

@@ -17,12 +17,13 @@ const requestOptions = {
 }
 function generateRecipe(){
     console.log("Generate Recipe");
-    let foodType = document.getElementById("foodtype").value;
+    const foodType = document.querySelector('input[name="fav_food_type"]:checked').value;
+    //let foodType = document.getElementById("foodtype").value;
     fetch(`https://api.spoonacular.com/recipes/random?apiKey=${apiKey1}&number=1&includeNutrition=true&include-tags=${foodType}`, requestOptions)
     .then((response) => response.json())
     .then((result) => {
         foodImage.src = result.recipes[0].image; 
-        learnMore.setAttribute("href",result.recipes[0].sourceUrl) 
+        learnMore.setAttribute("href",result.recipes[0].spoonacularSourceUrl) 
         foodName.innerHTML = result.recipes[0].title;
         foodProtein.innerHTML = result.recipes[0].nutrition.caloricBreakdown.percentProtein + "%";
         foodFat.innerHTML = result.recipes[0].nutrition.caloricBreakdown.percentFat + "%";
