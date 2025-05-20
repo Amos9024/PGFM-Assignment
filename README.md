@@ -41,12 +41,15 @@ When the user enters multiple inputs in the box. This will cause issues as the A
 # Credits
 
 Content
+
 Most of the data were obtained from the food API – Spoonacular.
 The food icon was obtained from – favicon.
 Fonts were obtained from Google Fonts.
 
 Media
+
 The photos used in this site were obtained via the food API – Spoonacular.
 
 Acknowledgements
+
 I received inspiration for this project from Mr Malcolm Yam and National Geographic website whereby the article shared that how food could cause impact to the body and brain.
